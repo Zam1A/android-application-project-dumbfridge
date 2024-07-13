@@ -1,0 +1,114 @@
+User story
+As an App Developer:
+
+1. As an app developer, I want to create a user-friendly interface for the smart fridge app so that users can easily navigate and control their fridge.
+(Priority: High)
+Acceptance Criteria:
+Given that a user has downloaded the app and created an account,
+When the user opens the app,
+Then the user should be able to see all available options clearly and navigate through them easily.
+
+2. As an app developer, I want to integrate the smart fridge app with voice assistants like Alexa and Google Assistant so that users can control their fridge with voice commands.
+(Priority: Medium)
+Acceptance Criteria:
+Given that the smart fridge app is open and connected to the internet,
+When a user says "Hey Google" or "Alexa", followed by a command to control the fridge,
+Then the app should be able to recognize the command and perform the appropriate action.
+
+3. As an App Developer, I want to create a feature that suggests recipes based on the ingredients in the user's fridge, so that they can use up their ingredients before they expire.
+(Priority: High)
+Acceptance Criteria:
+Given that the user has added food items to their inventory.
+When the food item is about to expire.
+Then the user receives an alert/notification to use the food item before it expires.
+
+4. As an app developer, I want to implement a feature that allows users to track their food waste and suggest ways to reduce it so that users can be more mindful of their food plan.
+(Priority: Medium)
+Acceptance Criteria:
+Given that a user has opened the smart fridge app and selected the food waste option,
+When the user inputs the amount of food they have thrown away,
+Then the app should display the amount of food waste over time and suggest ways to reduce it.
+
+5. As an app developer, I want to add a feature that allows users to track their calorie intake and suggest healthy meal options based on their goals so that users can maintain a healthy diet.
+(Priority: Medium)
+Acceptance Criteria:
+Given that a user has opened the smart fridge app and selected the calorie tracking option,
+When the user inputs the food they have consumed,
+Then the app should display the total calorie intake and suggest healthy meal options based on the user's goals.
+
+As a General User:
+
+6. As a general user, I want the smart fridge app to send me alerts when I'm running low on certain items so that I can restock them in time.
+(Priority: High)
+Acceptance Criteria:
+Given that a user has enabled push notifications for the smart fridge app,
+When the app detects that the quantity of a certain item in the fridge is below a certain threshold,
+Then the app should send a notification to the user's phone.
+
+7. As a general user, I want the smart fridge app to suggest healthy recipes based on the ingredients I have in my fridge so that I can make nutritious meals.
+(Priority: Medium)
+Acceptance Criteria:
+Given that a user has opened the smart fridge app and selected the recipe suggestion option,
+When the user selects the ingredients they have in their fridge,
+Then the app should suggest healthy recipes that can be made with those ingredients.
+
+8. As a general user, I want the smart fridge app to remind me of expiration dates for the items in my fridge so that I can consume them before they expire.
+(Priority: Medium)
+Acceptance Criteria:
+Given that a user has opened the smart fridge app and selected the expiration date option,
+When the app detects that an item is about to expire or has already expired,
+Then the app should send a reminder to the user's phone.
+
+9. As a general user who likes to plan meals in advance, I want the smart fridge app to suggest meal plans based on the ingredients I have in my fridge.
+(Priority: Medium)
+Acceptance Criteria:
+Given that a user has opened the smart fridge app and selected the meal planning option,
+When the user selects the ingredients they have in their fridge,
+Then the app should suggest meal plans that can be made with those ingredients.
+
+10. As a general user who likes to track their expenses, I want the smart fridge app to display the cost of the items I have added to my grocery list so that I can budget accordingly.
+(Priority: Low)
+Acceptance Criteria:
+Given that a user has opened the smart fridge app and selected the grocery list option,
+When the user adds items to their grocery list,
+Then the app should display the total cost of the items added.
+
+As a Supplier:
+11. As a grocery supplier, I want the smart fridge app to display the real-time inventory levels of the products in the fridge so that I can plan my restocking accordingly.
+(Priority: Low)
+Acceptance Criteria:
+Given that a user has opened the smart fridge app and selected the inventory option,
+When the app displays the real-time inventory levels of the products in the fridge,
+Then the app should accurately display
+
+12. As a supplier, I want the smart fridge app to allow me to customize the alerts for low inventory levels of certain products so that I can prioritize restocking based on demand.
+(Priority: Medium)
+Acceptance Criteria:
+Given that a supplier has logged into the smart fridge app and selected the settings option,
+When the supplier selects the low inventory level alerts option,
+Then the app should allow the supplier to customize the alerts for certain products.
+
+As a Functional developer:
+
+13. As a Functional Developer, I want to ensure that the app is secure and user data is protected, so that users can trust the app and feel comfortable using it.
+(Priority: High)
+Acceptance Criteria:
+Given that the user has created an account and added food items to their inventory.
+When the user's data is stored securely and is only accessible by the user.
+Then the user feels comfortable using the app and trusts that their data is protected.
+
+14. As a privacy-conscious user, I want the smart fridge app to only store and access data necessary for its functionality, so that my personal information remains secure.
+(Priority: High)
+Acceptance Criteria:
+Given that the user has logged in to the app using their personal account.
+When the user accesses the "Privacy Settings" menu.
+Then the app displays a list of data types that it collects and a toggle switch for each one. User can toggle on/off their consent to provide access to each data type.
+
+15.As a user concerned about data privacy, I want the smart fridge app to allow me to export my data or delete my account completely, so that I have control over my personal information.
+(Priority: Medium)
+Acceptance Criteria:
+Given that the user has accessed the "Account Settings" menu.
+When the user selects "Export Data" or "Delete Account."
+Then the outcome below:
+If user selects "Export Data," the app generates a file containing all the user's data and allows them to download it to their device.
+If user selects "Delete Account," the app confirms the user's action and deletes all the user's data from its servers.

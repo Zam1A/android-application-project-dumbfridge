@@ -1,0 +1,76 @@
+name: Run Tests
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+    
+    - name: set up JDK 11
+      uses: actions/setup-java@v3
+      with:
+        java-version: '11'
+        distribution: 'corretto'
+        cache: gradle
+
+    - name: Grant execute permission for gradlew
+      run: chmod +x gradlew
+
+    - name: Test with Gradle
+      run: ./gradlew test
+
+    - name: Food Entry Tests - Ben
+      uses: actions/upload-artifact@v3
+      if: always()
+      with:
+        name: FoodExpiryTest
+        path: ./app/src/main/java/example/application
+        retention-days: 30
+        
+    - name: Collect Release Test Report 
+      uses: actions/upload-artifact@v3
+      if: always()
+      with:
+        name: TestReportRelease
+        path: ./app/build/reports/tests/testReleaseUnitTest
+        retention-days: 30
+        
+    - name: Account System Tests - Blake
+      uses: actions/upload-artifact@v3
+      if: always()
+      with:
+        name: AccountSystemTests
+        path: ./app/src/main/java/example/application
+        retention-days: 30
+
+    - name: Shopping List Tests - Xavier
+      uses: actions/upload-artifact@v3
+      if: always()
+      with:
+        name: ShoppingListTest
+        path: ./app/src/main/java/example/application
+        retention-days: 30
+        
+    - name: Food Calculator Test - Yuchen
+      uses: actions/upload-artifact@v3
+      if: always()
+      with:
+        name: FoodCalculatorTest
+        path: ./app/src/main/java/example/application
+        retention-days: 30
+
+    - name: Settings Activity Test - Yan
+      uses: actions/upload-artifact@v3
+      if: always()
+      with:
+        name: SettingsActivityTest
+        path: ./app/src/main/java/example/application
+        retention-days: 30

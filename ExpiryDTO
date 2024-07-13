@@ -1,0 +1,40 @@
+package example.application;
+
+public class Food_ExpiryDTO {
+    private String foodName;
+    private int expiryDay_Day;
+    private int expiryDay_Month;
+    private int expiryDay_Year;
+
+    public String getFoodName() {
+        return foodName;
+    }
+
+    public void setFoodName(String foodName) {
+        this.foodName = foodName;
+    }
+
+    public int getExpiryDay_Day() {
+        return expiryDay_Day;
+    }
+
+    public void setExpiryDay_Day(int expiryDay_Day) {
+        this.expiryDay_Day = expiryDay_Day;
+    }
+
+    public int getExpiryDay_Month() {
+        return expiryDay_Month;
+    }
+
+    public void setExpiryDay_Month(int birthDay_Day) {
+        this.expiryDay_Month = expiryDay_Month;
+    }
+
+    public int getExpiryDay_Year() {
+        return expiryDay_Year;
+    }
+
+    public void setExpiryDay_Year(int expiryDay_Year) {
+        this.expiryDay_Year = expiryDay_Year;
+    }
+}

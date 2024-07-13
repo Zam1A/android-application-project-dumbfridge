@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/foodEntry_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp">
+
+
+    <EditText
+            android:id="@+id/foodNameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Food Name" android:textSize="34sp" android:minHeight="48dp"
+
+            android:layout_marginTop="40dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"/>
+    />
+    <EditText
+            android:id="@+id/expiryDateText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/foodNameText"
+            android:hint="Enter Expiry Date" android:textSize="34sp" android:minHeight="48dp"
+            android:layout_marginTop="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"/>
+
+    <Button
+            android:id="@+id/add_Food_Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="200dp"/>
+
+    <ListView
+            android:id="@+id/foods_listview"
+            android:layout_width="wrap_content"
+            android:layout_height="348dp"
+            android:layout_below="@id/add_Food_Btn"
+            android:layout_marginTop="16dp"/>
+
+    <Button
+            android:id="@+id/back_Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"/>
+
+</RelativeLayout>

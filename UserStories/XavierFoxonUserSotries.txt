@@ -1,0 +1,143 @@
+(Priority: High)
+As someone with not a lot of time, I want a fridge that plans meals and generates shopping lists for me so that i can still live a healthy life style, without losing the time and exerting the effort.
+Acceptance Criteria:
+Given the user doesn't have a lot of time,
+When the user uses the fridge,
+Then the fridge should plan meals and generate shopping lists so that the user doesnt waste time.
+
+(Priority: High)
+As a mother, I want a fridge that sends me a notification of when my food is about to expire, so I can minimise food waste and to protect my family from food that isn't fresh.
+Acceptance Criteria:
+Given that the user is a mother,
+When the food in the fridge expires,
+Then a notification should be sent out to minimise food waste and protect the family.
+
+(Priority: Low)
+As a bodybuilder, I want a fridge that provides me with accurate nutritional information for the food I eat, making sure that I get the required calorie intake while I'm bulking.
+Acceptance Criteria:
+Given the user is a bodybuilder,
+When they need to reach a certain calorie intake,
+Then the fridge should provide accurate nutritional information for the food being eaten.
+
+(Priority: Medium)
+As someone looking to make a change, I want a fridge that can help me start my diet and continue you it in a manner that is easy by tracking what I'm eating and only providing healthy options.
+Acceptance Criteria:
+Given that the user wants to start being healthier,
+When they want to give up on their diet,
+Then the fridge should make dieting easy to dismay the user from giving up.
+
+(Priority: Medium)
+As a customer, I want to be able to set what my eating goals are so that my fridge is able to properly recommend meals that are suited to me.
+Acceptance Criteria:
+Given that the customer has eating goals
+When they need to make meals to meet those goals,
+Then the fridge should recommend meals that help reach the goals.
+
+(Priority: High)
+As an eco-conscious individual, I want a fridge that helps me reduce food waste and promote sustainability by ensuring that I consume all of my food items before they expire.
+Acceptance Criteria:
+Given the user is eco-conscious,
+When their food is about to expire,
+Then the fridge should ensure that user consumes the food.
+
+(Priority: High)
+As a tech-savvy individual, I want a fridge that integrates with my phone. So that I can access its features remotely and stay connected with my food intake, even when I'm on the go.
+Acceptance Criteria:
+Given that the user wants to intergrate the fridge with their phone,
+When they need to access it remotely,
+Then the associated app will have good access to all of the fridges information.
+ 
+(Priority: Low)
+As a University student, I want a fridge that is compact and can allow me to not waste its space thanks to its features to help reduce food waste. This is because of the limited space I have in my apartment.
+Acceptance Criteria:
+Given that the university student has limited space in their apartment,
+When they need to save space and not waste food,
+Then the fridges functionality can assist.
+
+(Priority: Medium)
+As an Elderly person living alone, I want a fridge that can recommend me healthy and easy things to make as in my old age it is now too hard to spend so much effort on cooking.
+Acceptance Criteria:
+Given that the user is elderly,
+When cooking takes too much effort,
+Then the fridge can recommend easy meals.
+
+(Priority: High)
+As a vegetarian, I want a fridge that helps me keep track of my protein intake by providing me with nutritional information for the plant-based protein sources I consume, so that I can ensure that I am meeting my dietary needs.
+Acceptance Criteria:
+Given the user is a vegetarian,
+When they need to keep track of their nutritional information whilst staying plant-based,
+Then the fridge can track it for them and make sure they are meeting their dietary needs.
+
+(Priority: High)
+As someone with many allergies, I want to be able to customise my account to make sure no meals that conflict with my allergies are going to be recommended to me.
+Acceptance Criteria:
+Given the user has many allergies,
+When they want to customise their account,
+Then they can easily do so while setting what allergies they have.
+ 
+(Priority: High)
+As someone who grows their own fresh produce, I want a fridge that helps me keep track of the fruits and vegetables I harvest and reminds me when I need to consume them before they spoil, so that I can make the most of my home-grown produce.
+Acceptance Criteria:
+Given the user grows their own produce,
+When the produce is about to become spoilt,
+Then the fridge can notify them.
+
+(Priority: Low)
+As a chef who values freshness, I want a fridge that helps me track the freshness of my ingredients and alerts me when I need to use them, so that I can ensure that my dishes are always made with the freshest ingredients.
+Acceptance Criteria:
+Given the user is a chef,
+When they want to the freshest ingredients,
+Then the fridge can track what ingredients are the freshest and which need to be used before no longer being fresh.
+
+(Priority: High)
+As a person who values sustainability, I want a fridge that helps me reduce my carbon footprint by minimising food waste and promoting sustainable food practices.
+Acceptance Criteria:
+Given the user values sustainability,
+When they want to reduce their carbon footprint,
+Then the fridges functionality can help minamise food waste.
+ 
+(Priority: Medium)
+As a person with diabetes, I want a fridge that helps me manage my blood sugar levels by providing me with accurate nutritional information for the food I eat, and reminding me to consume foods that align with my dietary needs. The smart fridge could also suggest meal plans and recipes that are suitable for diabetics.
+Acceptance Criteria:
+Given the user is diabetic,
+When they need accurate nutritional information for the food they eat,
+Then the fridge can provide services that do so, and also providing recipies that are suitable for dietary needs.
+ 
+(Priority: High)
+As a person who enjoys cooking, I want a fridge that provides me with recipe suggestions based on the ingredients I have on hand, so that I can experiment with new dishes without having to buy additional ingredients.
+Acceptance Criteria:
+Given the user enjoys cooking,
+When they need to cook,
+Then the fridge can suggest recipes based on ingredients currently in the fridge.
+
+(Priority: Low)
+As a person who wants to try a variety of food, I want a fridge that suggests new foods that I haven't tried before to me and also the ability to search for and add recipes.
+Acceptance Criteria:
+Given the user wants to try a variety of food,
+When they want to search for a new recipe,
+Then the fridge can suggest new recipes based on what has been made in the past.
+ 
+(Priority: Low)
+As a chef, I want a fridge that can store my own recipes and tells me if I have the available ingredients for one of my recipes.
+Acceptance Criteria:
+Given the user is a chef,
+When they want to add their own recipe,
+Then they can thanks to the functionality of the fridge.
+ 
+(Priority: Low)
+As someone on a budget, I want my fridge to help me eat healthy on a budget by helping me make a shopping list and being able to set my weekly budget for food.
+Acceptance Criteria:
+Given the user is on a budget,
+When they want to eat healthy,
+Then the fridge can make a shopping list to stay on budget but also keep healthy.
+
+(Priority: Low)
+As a busy parent with a large family, I want a fridge that helps me manage my food inventory by generating shopping lists based on the meals I plan to make, so that I can keep track of what I need to buy and avoid overstocking my fridge.
+Acceptance Criteria:
+Given the user is a busy parent with a large family,
+When they need to avoid overstocking the fridge,
+Then the fridge can generate shopping lists based on what meals are planned for the week.
+ 
+
+
+

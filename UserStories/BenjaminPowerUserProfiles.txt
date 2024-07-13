@@ -1,0 +1,47 @@
+1.	As a health-conscious consumer, I want a smart fridge that can suggest healthy meals based on the ingredients I have so that I can make informed food choices and maintain a healthy lifestyle.
+Acceptance Criteria:
+Given that the fridge is stocked with ingredients, When the user requests a meal suggestion from the fridge, Then the fridge will provide a list of healthy meal options that can be made from the ingredients the fridge currently has.
+2.	As a busy working professional, I want a smart fridge that can remind me when my groceries are running low, so that I can save time by avoiding frequent trips to the grocery store.
+Acceptance Criteria:
+Given that some of the stock that was In the fridge has been used, When the fridge detects that groceries are running low, Then the fridge will send a notification to phone or email, reminding to restock.
+3.	As a home cook, I want a smart fridge that can recommend recipes based on the ingredients I have so that I can create new and interesting meals.
+Acceptance Criteria:
+Given that the fridge has been stocked with ingredients, When recipe suggestions are requested from the fridge, Then the fridge will provide a list of recipes that can be made from the ingredients and avoid that food going to waste.
+4.	As a parent, I want a smart fridge that can monitor the expiration dates of the food items in my fridge, so that I can keep my family safe from food poisoning.
+Acceptance Criteria:
+Given that each expiry date is provided/recorded for the fridge to recognise, When the expiration date of a food item is approaching, Then the fridge will notify to discard the food item.
+5.	As a person who hates wasting food, I want a smart fridge that can recommend recipes based on the ingredients that are about to expire, so that I can use them before they go to waste.
+Acceptance Criteria:
+Given that each expiry date is provided/recorded for the fridge to recognise, When an ingredient is about to expire, Then the fridge will suggest a recipe that uses the ingredient, so that the user can use it before it goes to waste.
+6.	As a user who wants to track my daily calorie intake, I want a smart fridge that can scan the barcodes of food items and automatically log them in a food tracker app.
+Acceptance Criteria:
+Given that the user has a food tracking app that can be linked with the fridge, When the user scans the barcode of a food item using the fridge, Then the fridge will automatically log the item into the users food tracker app.
+7.	As a user who wants to track my daily water intake, I want a smart fridge that can remind me to drink water at regular intervals.
+Acceptance Criteria:
+Given that there is water in the fridge and a reminder set up on the fridge for the water, When the fridge detects no water has been consumed for a certain period of time, Then the fridge will send a notification reminding the user to drink water.
+8.	As a user who wants to manage my grocery budget, I want a smart fridge that can suggest cheaper alternatives for the food items that I normally purchase.
+Acceptance Criteria:
+Given that over time enough food has been placed into the fridge, When the fridge detects that expensive food items are frequently purchased, Then the app will suggest cheaper alternatives for those food items.
+9.	As a user who wants to simplify meal planning, I want a smart fridge that can generate a weekly meal plan for me based on my dietary preferences and restrictions.
+Acceptance Criteria:
+Given that the user has set up their dietary preferences and restrictions on the fridge, When a weekly meal is requested from the fridge, Then the fridge will provide a plan for breakfast, lunch, and dinner for the week.
+10.	As a user who wants to reduce food waste, I want a smart fridge that can suggest creative ways to use leftover food items.
+Acceptance Criteria: Given that there are leftovers in the fridge recognised by the app, When a request for suggestions with the leftovers from the fridge, Then the fridge will provide creative ideas to use the leftovers in new dishes.
+11.	As a user who wants to know the nutritional value of my food, I want a smart fridge that can display the nutritional information of the food items in my fridge.
+Acceptance Criteria:
+Given that the food items have been scanned into the app, When a request for the nutritional information of a food item from the app, Then the app will display the nutritional information of the food item on its screen.
+12.	As a user who wants to reduce food waste, I want a smart fridge that can alert me when I am overstocking on food items.
+Acceptance Criteria:
+Given that I have logged my food items into the app and fridge, When the fridge detects that overstocking on food items is occurring, Then the fridge will send notification to the app, reminding the user to consume the existing food items before purchasing more.
+13.	As a user who wants to avoid foodborne illnesses, I want a smart fridge that can monitor the temperature of the food items in my fridge and alert me if there is a temperature breach.
+Acceptance Criteria:
+Given that the fridge can record temperatures and is set up with a minimum and maximum threshold for this, When the fridge detects a temperature breach, Then the fridge will send a notification to the app, alerting the user to consume or discard the affected food item.
+14.	As a user who wants to make sure my food is always fresh, I want a smart fridge that can automatically adjust the temperature and humidity settings based on the type of food item being stored.
+Acceptance Criteria:
+Given that the fridge can have pre-set settings to recognise the acceptable temperature for the majority of foods in the fridge, When food with the same temperature requirements is stored in the fridge, Then the fridge will automatically adjust the temperature and humidity settings based on the type of food item being stored.
+15.	As a user who wants to make sure my fridge is always clean, I want a smart fridge that can remind me when it is time to clean it.
+Acceptance Criteria:
+Given that the fridge has been set up, When the fridge detects that it is time to clean it, Then the fridge will send notification to the app, reminding to clean it.
+16.	As a user, I want an account that can save my preferences when I want to use the fridge/app.
+Acceptance Criteria:
+Given that the ability to create a user account has been included, When the user logs into their account, Then the fridge will be able to set up/recognise their preferences and requirements in what they are looking for with the fridge and app.

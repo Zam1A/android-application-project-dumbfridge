@@ -1,0 +1,247 @@
+User Stories
+
+1. As a general user, I want to create an account with my fridge so that I can save my details
+Acceptance Criteria:
+Given that the user has the application,
+When they want to save their details to the fridge,
+Then the user will have created an account
+
+2. As a general user, I want to add my dietary requirements to my account so that I can ensure that
+I am eating right
+Acceptance Criteria:
+Given that the user has an account on the app,
+When they log into the app,
+Then the user uploads their dietary requirements.
+
+3. As a general user, I want to add an item to the fridge so that I know what I have in the fridge
+Acceptance Criteria:
+Given that I have an item for refrigeration,
+When the item is added to the fridge,
+The item will appear on the list of items within the fridge
+
+4. As a general user, I want to attach an expiry date to its corresponding item, so I can use the item
+it before it expires.
+Acceptance Criteria:
+Given that I have an item in the fridge,
+When the item is added to the fridge,
+The item's expiry date will be added to the item's details
+
+5. As a general user, I want to add the nutritional information to an item in the fridge so that I
+can keep track of my intake
+Acceptance Criteria:
+Given that I have an item in the fridge,
+When the item is added to the fridge,
+The item's nutritional information will be added to the item's details
+
+6. As a general user, I want to be able to view a list of all my items in the fridge so that I
+know what I have in the fridge
+Acceptance Criteria:
+Given that I have an items in the fridge,
+When I want to see what is in the fridge,
+A list of item's and quantities will be added to the fridge
+
+7. As a general user, I want to be notified when an item is approaching its expiry date so that
+I can use it before it goes to waste
+Acceptance Criteria:
+Given that I have an items in the fridge,
+When an item is reaching its expiry date
+Then a notification will be sent to the user reminding them that the item is expiring
+
+8. As general user, I want to be notified when a compostable item expires so that I can compost
+it to avoid food waste
+Acceptance Criteria:
+Given that I have an items in the fridge,
+When an item that can be composted is reaching its expiry date
+Then a notification will be sent to the user reminding them to compost said item
+
+9. As an indecisive eater, I want to be given a meal suggestion based on my dietary requirements
+so that I don't have to think for myself
+Acceptance Criteria:
+Given that I have items in the fridge and can't decide what I want to eat,
+When I am hungry but can't decide what to eat
+Then the fridge will provide a suggestion based on what is within the fridge
+
+10. As a person who does not like to waste food, I want to be given a meal suggestion containing the
+item that is approaching expiry so that I can use the item before it goes to waste.
+Acceptance Criteria:
+Given that I have items in the fridge approaching expiry,
+When I am hungry
+Then the fridge will provide a meal suggestion featuring the expiring item
+
+11. As a general user, I want to be able to create a shopping list so that I can remember
+what I need to buy the next time I go shopping
+Acceptance Criteria:
+Given that I need to go shopping
+When I think of an item I need
+Then a shopping list will be created
+
+12. As a general user, I want to be able to add an item to the shopping list so that I can buy it
+the next time I go shopping
+Acceptance Criteria:
+Given that I need to go shopping
+When I think of an item I need
+Then the item will be added to the shopping list
+
+13. As a general user, I want to be able to create a stock list of items that I ideally want in my
+fridge at all times so that when the item runs out it will be added to the shopping list
+Acceptance Criteria:
+Given that I have foods that I regularly eat,
+When I want to maintain the level of that food item
+Then a stock list will be created.
+
+14. As a smart fridge, I want to be able to add an item from the users stock list to the user's shopping
+list when it falls below the given amount or runs out
+Acceptance Criteria:
+Given that I have foods that I regularly eat,
+When I run out of the food item
+Then the item will be added to the shopping list
+
+15. As a general user, I want to be able to tell the fridge to order my groceries (via delivery or
+click and collect) so that I do not have to go grocery shopping.
+Acceptance Criteria:
+Given that I don't have time to go shopping
+When I run out of the food
+Then the fridge will place an order for the user's shopping list
+
+16. As a good smart fridge, I want to be able to suggest a meal based on the user's dietary requirements so
+that I can ensure the user is eating correctly
+Acceptance Criteria
+Given that I want the user to eat healthily
+When it is approaching meal time
+Then a suggestion for a meal is provided
+
+17. As a health-conscious user, I want to know the nutritional value of a meal so that I can ensure
+that I am eating healthily
+Acceptance Criteria:
+Given that I want to eat healthily
+When I have created a meal
+Then the nutritional value of that meal is provided
+
+18. As a general user, I want to be able to access my shopping list remotely so that I can remember
+what Items I have on the shopping list when I am in the supermarket.
+Acceptance Criteria:
+Given that I have a shopping list and am at the shops
+When I am shopping
+Then the shopping list is accessed
+
+19. As a general user, I want the fridge to recommend me a meal based on the items contained in the
+fridge so that I don't waste food and I don't have to go shopping for extra ingredients
+Acceptance Criteria:
+Given that I have a lot of items in the fridge
+When I am hungry and feeling not wasteful,
+Then I want a meal suggestion containing items only in the fridge
+
+20. As a health-conscious user, I want to be able to add ingredients to my shopping list based on a
+meal suggestion by the fridge based on my dietary requirements so that I can ensure I eat correctly.
+Acceptance Criteria:
+Given that a healthy meal was recommended and I don't have all the necessary items
+When I want to make the meal,
+Then the items that I do not have are added to the shopping list
+
+21. As a general user, I wish to be able to add an item and quantity to the ideal stock list of a fridge
+to ensure that I always have the item in the fridge
+Acceptance Criteria:
+Given that I have a stock list
+When I want to automate shopping
+Then the items on the stock list contain an ideal amount of stock
+
+22. As a general user, I want to add a pantry to my fridge so that I can keep a track of all my groceries not
+just what is contained within the fridge.
+Acceptance Criteria:
+Given that I have items that are not in a fridge
+When I want to have meal suggestions including these items
+Then a pantry list will be added to the customers account
+
+23. As a general user, I want to be able to add an item to my pantry so that I can keep a track of it.
+Acceptance Criteria:
+Given that I have items that are not in a fridge
+When I want the fridge to know about these items
+Then an item will be added to the pantry list
+
+24. As a general user, I want to be able to add the expiry date and nutritional information of a pantry item
+so that I can ensure that I use the item before it expires and not waste food and that I can eat healthily.
+Acceptance Criteria:
+Given that I have items that are not in a fridge
+When I want the fridge to know about these items
+Then an item's expiry date and nutritional info will be added to the pantry list
+
+25. As a general user, I want to be able to create a meal plan on the fridge so that I can add any items I
+require to the shopping list.
+Acceptance Criteria:
+Given that I want to plan ahead
+When I want to create a meal
+Then A meal plan is added to the user's account
+
+26. As a general user, I want to have some favourite meals so that I don't have to continuously
+re-add the meals to the meal plan
+Acceptance Criteria:
+Given that I have a meal plan
+When I have meal that I eat frequently
+Then the meal will appear in the favourites list
+
+27. As a general user, I want to be able to choose/add my preferred supermarket for click and collect and/or
+grocery delivery so that I don't have to go too far or pay too high a delivery fee.
+Acceptance Criteria:
+Given that I order online
+When I want to pick up my food
+Then the supermarket of choice will be added to my account
+
+28. As a general user, I want to be able to add my address to the fridge so that the fridge knows where
+it is required to deliver to.
+Acceptance Criteria:
+Given that I order groceries online
+When I make my order
+Then fridge will automatically add my address to the order based on the address attached to the user account
+
+29. As a general user, I want to be notified when an Item in my pantry is about to expire so that I can use it
+before it expires
+Acceptance Criteria:
+Given that I have food in the pantry list
+When an item is due to expire
+Then the fridge will send a message notifying the user that an item is expiring
+
+30. As a general user I want to be able to view the items in my fridge or pantry, So I know what I have in the fridge
+Acceptance Criteria:
+Given that I have food in the pantry/fridge
+When I want to see what I have in the fridge
+Then a list of items contained in the fridge/pantry
+
+31. As a general user, I want to be able to remove unwanted items from my shopping list so that I don't waste
+my money buying unnecessary things or create unnecessary food waste because I am overstocked.
+Acceptance Criteria:
+Given that I have food on my shopping list
+When I want to remove an item on the shopping list
+Then the item will no longer appear on the shopping list
+
+32. As a general user, I want to be able to search for an Item that is contained in my fridge and pantry.
+Acceptance Criteria:
+Given that I have food in my fridge/pantry
+When I want to see if I have an item
+Then a search will appear with the results
+
+33. As a general user, I want to be able to view an item within the fridge so that I can see its expiry date
+and nutritional information.
+Acceptance Criteria:
+Given that I have food in my fridge/pantry
+When I want to see if I have an item
+Then a search will appear with the results
+
+34. As a general user, I want to be able to sort my items in my lists by expiry date or nutritional value so that
+I can see how close things are to expiring and how healthy my items are.
+Acceptance Criteria:
+Given that I have food in my fridge/pantry
+When I want to see how far things are from expiring
+Then the fridge/pantry list will be sorted by expiry date
+
+35. As a general user, I want to be able to add payment information to my account so that I can pay for my
+grocery orders
+Acceptance Criteria:
+Given that I want to order online
+When I want to pay for my groceries
+Then the fridge will add the payment information that is attached to my account
+
+36. As a smart fridge, I want to provide calorie intake recommendations to my users to ensure they are eating right.
+Acceptance Criteria:
+Given that I know the user's details
+When they want a meal suggestion
+Then the users recommended intake requirements will be displayed

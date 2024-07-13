@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ProvideRecipeActivity">
+
+    <TextView
+            android:text="project DumbFridge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_alignParentStart="false"
+            android:layout_marginStart="104dp" android:layout_alignParentTop="false" android:layout_marginTop="33dp"
+            android:id="@+id/menuHeader" android:layout_centerHorizontal="true" android:textSize="24sp"/>
+    <TextView
+            android:text="Meal Suggestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" android:id="@+id/subHeader" android:layout_below="@+id/menuHeader"
+            android:textSize="20sp"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:layout_marginTop="20dp" android:id="@+id/editFoodItem"
+            android:hint="Enter Expiring Food Item" android:layout_centerHorizontal="true"
+            android:layout_below="@+id/subHeader" android:minHeight="48dp"/>
+    <Button
+            android:text="Provide Recipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:id="@+id/buttonProvideRecipe" android:layout_below="@+id/editFoodItem"
+            android:layout_centerHorizontal="true"/>
+    <TextView
+            android:text="dumbFridge Recommends:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp" android:layout_marginTop="5dp"
+            android:id="@+id/textRecipeHeader" android:layout_below="@+id/buttonProvideRecipe"/>
+    <TextView
+            android:text="The Recipe Is"
+            android:layout_width="350dp"
+            android:layout_height="300dp"
+            android:layout_marginStart="10dp"
+            android:id="@+id/textRecipeSuggested" android:layout_above="@+id/buttonGoBack"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/textRecipeHeader" android:layout_centerHorizontal="true"/>
+    <Button
+            android:text="Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonGoBack"
+            android:layout_alignParentBottom="true" android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+    />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+Mince, 23, 04, 23
+Chicken, 27, 04, 23
+Juice, 20, 06, 24
+Pork Chops, 25, 04, 23
+Mayonnaise, 05, 01, 24
+Pizza, 24, 04, 23
+Milk, 20, 05, 23
+Yogurt, 14, 05, 23
+Ham, 23, 04, 23
+Pepperoni, 27, 04, 23
+

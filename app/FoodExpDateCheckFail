@@ -1,0 +1,180 @@
+package example.application;
+
+import android.content.Context;
+import android.content.Intent;
+import android.icu.text.SimpleDateFormat;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.*;
+import androidx.appcompat.app.AppCompatActivity;
+import example.data.*;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import java.text.ParseException;
+import java.util.Date;
+
+
+public class FoodEntry extends AppCompatActivity {
+
+//    public FileIO fileIO = new FileIO();
+//    java.util.List<Food_ExpiryDTO> food;
+
+    private final StaticFoodDAO staticFoodDAO = new StaticFoodDAO();
+
+    private EditText foodName;
+    private EditText expiryDate;
+
+    private Button addFoodButton;
+    private Button backButton;
+
+    private Food currentFood;
+    private ListView foodsListView;
+
+    private ArrayAdapter<Food> foodsAdapter;
+    private boolean isFood = false;
+
+
+    LocalDate currentDate = LocalDate.now();
+    DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+    String formattedDate = currentDate.format(dateTimeFormatter);  //17-02-2022
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.food_entry);
+
+        // Initialize the views
+        foodName = findViewById(R.id.foodNameText);
+        expiryDate = findViewById(R.id.expiryDateText);
+        addFoodButton = findViewById(R.id.add_Food_Btn);
+        backButton = findViewById(R.id.back_Btn);
+        foodsListView = findViewById(R.id.foods_listview);
+        foodsListView.setAdapter(foodsAdapter);
+
+        addFoodButton.setOnClickListener(v -> addFoodButtonClick());
+        backButton.setOnClickListener(v -> backButtonClick());
+
+    }
+
+    private void addFoodButtonClick() {
+//        if(validateDate(expiryDate.getText().toString()) == true){
+//            //if(expiryDate.getText().toString().equals(formattedDate)){
+//            //System.out.println("date works, but shouldn't");
+//            //TODO fields are there and able to be typed in along with a textviewer that I am trying to add entries into.
+//        }
+//        else
+//        {
+//            Toast.makeText(this, "Invalid date format, please enter as dd/mm/yyyy", Toast.LENGTH_SHORT).show();
+//        }
+
+        // Get the email and password from the EditTexts
+        String fName = foodName.getText().toString();
+        String expDate = expiryDate.getText().toString();
+
+        // Add the user to the database
+        staticFoodDAO.addFood(new Food("", expDate));
+        if (foodName.length() > 0) {
+            // add string to the adapter, not the listview
+            foodsAdapter.add(currentFood);
+            createFoodsAdapter();
+//            boolean success = isFood ? foodCreate(fName, expDate, nameEditText.getText().toString()); : logIn(email, password);
+//            if (success) {
+//
+//            } else {
+//                // Show an error message
+//                Toast.makeText(this, " ", Toast.LENGTH_SHORT).show();
+//            }
+        }
+
+    }
+
+
+    private boolean validateDate(String expirydate) {
+
+        Pattern pattern;
+        Matcher matching;
+        String DATE_REQUIREMENTS = "^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[012])/(23|24)\\d{2}$";
+        pattern = Pattern.compile(DATE_REQUIREMENTS);
+        matching = pattern.matcher(expirydate);
+        return matching.matches();
+
+    }
+
+    public void backButtonClick() {
+        Intent intent = new Intent(this, MenuActivity.class);
+        startActivity(intent);
+        finish();
+    }
+
+    private boolean foodCreate(String enteredFood, String enteredExpDate) {
+        // Check if the email and password match a registered user.
+        for (Food food : staticFoodDAO.listFoods()) {
+            if (food.getFoodName().equals(enteredFood) && food.getexpiryDate().equals(enteredExpDate)) {
+                currentFood = food;
+            }
+        }
+        // If so, if the name is not empty, update the user's name and log the user in.
+        if (currentFood != null) {
+            if (!enteredFood.isEmpty()) {
+                currentFood.setName(enteredFood);
+                staticFoodDAO.updateFoods(currentFood);
+            }
+            // Always log the user in.
+            return true;
+        }
+        return false;
+    }
+
+    private void createFoodsAdapter() {
+        // Add some sample users
+        List<Food> foods = new ArrayList<>(staticFoodDAO.listFoods());
+
+        // Initialize the ListView and the ArrayAdapter
+        foodsListView = findViewById(R.id.foods_listview);
+        foodsAdapter = new FoodListAdapter(this, foods);
+
+        // Set the ArrayAdapter on the ListView
+        foodsListView.setAdapter(foodsAdapter);
+    }
+
+    public class FoodListAdapter extends ArrayAdapter<Food> {
+
+        public FoodListAdapter(Context context, List<Food> foods) {
+            super(context, 0, foods);
+        }
+
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+            // Get the data item for this position
+            Food food = getItem(position);
+
+            // Check if an existing view is being reused, otherwise inflate the view
+            // This view use the item_user layout as the template
+            if (convertView == null) {
+                convertView = LayoutInflater.from(getContext()).inflate(R.layout.food_user, parent, false);
+            }
+
+            // Lookup views within item layout
+            TextView foodTextView = convertView.findViewById(R.id.foodname_textview);
+            TextView expiryTextView = convertView.findViewById(R.id.expirydate_textview);
+
+            // Populate the data into the template view using the data object
+            foodTextView.setText(food.getFoodName());
+            expiryTextView.setText(food.getexpiryDate());
+
+            // Return the completed view to render on screen
+            return convertView;
+        }
+    }
+}
+
+

@@ -1,0 +1,75 @@
+package example.application;
+
+import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
+
+public class FileIO {
+
+
+    int numberOfEntries = 0;
+    int currentEntry = 0;
+
+
+
+    public static List<Food_ExpiryDTO> read() throws IOException {
+
+        ArrayList<Food_ExpiryDTO> Foods = new ArrayList<Food_ExpiryDTO>();
+
+        try
+        {
+            FileInputStream fstream = new FileInputStream("ExpiryDates.csv");
+            DataInputStream in = new DataInputStream(fstream);
+            BufferedReader br = new BufferedReader(new InputStreamReader(in));
+            int i = 0;
+            String line;
+
+            while ((line = br.readLine()) != null)
+            {
+
+                String[] breaker = line.split("");
+
+                Food_ExpiryDTO p = new Food_ExpiryDTO();
+                p.setFoodName(breaker[0]);
+                p.setExpiryDay_Day(Integer.parseInt(breaker[1]));
+                p.setExpiryDay_Month(Integer.parseInt(breaker[2]));
+                p.setExpiryDay_Year(Integer.parseInt(breaker[3]));
+
+                Foods.add(p);
+            }
+
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+            System.err.println("Error Reading File: " + e.getMessage());
+            System.err.println("Failed to parse csv, unexpected character");
+        }
+        return Foods;
+    }
+
+    public static void write(String csvFile,List<Food_ExpiryDTO> listToWrite) throws IOException {
+        FileWriter fw = new FileWriter(csvFile);
+        BufferedWriter bw = new BufferedWriter(fw);
+        for (Food_ExpiryDTO p : listToWrite) {
+            bw.write(p.getFoodName() + "," + p.getExpiryDay_Day() + "," + p.getExpiryDay_Month() + "," + p.getExpiryDay_Year() + "\n");
+        }
+        bw.close();
+    }
+
+
+    public static class newFood
+    {
+        public static void main (String[] args){
+            String foodName;
+            int ExpiryDay_Day;
+            int ExpiryDay_Month;
+            int ExpiryDay_Year;
+        }
+
+//somehow adding this object to an array or a list and then returning
+
+    }
+
+}
+
